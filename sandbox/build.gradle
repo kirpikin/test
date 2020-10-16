@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    // enable TestNG support (default is JUnit)
+    useTestNG()
+}
+
+tasks.withType(Test){
+    scanForTestClasses = false
+    include "ru/javatest/sandbox/SandboxTests.class"
+
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    compile group: 'org.testng', name: 'testng', version: '7.3.0'
+}
+
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}

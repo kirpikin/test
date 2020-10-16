@@ -1,0 +1,2 @@
+ru/javatest/sandbox/MyFirstProgram.java
+ ru.javatest.sandbox.MyFirstProgram

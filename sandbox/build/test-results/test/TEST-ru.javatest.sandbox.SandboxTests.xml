@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.javatest.sandbox.SandboxTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-15T20:23:03" hostname="Igors-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="firstTest" classname="ru.javatest.sandbox.SandboxTests" time="0.01"/>
+  <system-out><![CDATA[Car{wheels=4, doors=4, name='Mustang'}
+Car{wheels=4, doors=4, name='Volga'}
+one Equals two
+Hello world
+10
+Test [Hello, toto]
+lalal
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
